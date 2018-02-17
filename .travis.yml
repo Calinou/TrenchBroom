@@ -16,13 +16,14 @@ deploy:
   skip_cleanup: true
   draft: true
   api_key:
-    secure: "W2j2h2gKveogAS9u8zxavzjCPHtPBXpbDVw9Swyvn9idyeqTbeOM+uzww7MkqakIbjGrMhQdfJiCoVC3qQCw5QLybvtBWYjdHGtkq4m9F9WFmGQ4/tSOZEzvz6VNkQmGPOuRzyHWFFZQtbAn9OmJrPgjI8LrWUUubmlQ5304jnQ="
+    secure: "NpFICo9uWvFEaGS8QwpWORkh8hQurZHu5Gs0QvShVCYawJlVygXyYn4n0CjeZ6Ni25j9kDUeVZHsPXRh9k3dTvIAdi3ojlXWPFuP1ve1ALBcGG9IKRjJYau4HYGWXBqLHATohxUGe7EXv17aKSp2YwO0F1zQNQ/10YDH7CM9Ajd6Glco9WYWbg09PDy5xZQLFHoFZCkLj39Vd9hUl014tegNWY//FJdv4YZU2uV2eUchmrbamR94sYbwR8/23//9CBflBsAwBsuMvLbhNuRSBrDKPohkGBL9jRPrkNy/OXrG2/jMKGGj7c94jypPYfG4wVBwJeKe7OBnalabJwugdSETSlaamNAHr8r5c3a1vRnTEHejyrn22z/EH1v0YzhTw95gKmxd+ch3+5m4/LL7KVSrtXSygHNuHjpKrBAzjVrgBSOcuibxujWeJrd6SdOeQWV2yHrCaciLeoWcTBFSipHipmKVOhWIJZTLJfynxM8G767heG+nhSdYXQBQpZk7kcJwBLhhZeTGO+hqBQG3/lhF6Jz4JLPVNy2oFTkcZLMjEjwDK1N+Lg897MZ5KgDNRPeRWtEpYuwwFY9PyCUTPZkXeAFV42arsQj4gM1Fh/E9HbbMoRCEpAgtqEde8y0oMxohggaZCTEtY9qysZ4yFim2Y/1QXvDeAVgZoZX860k=" # FIXME: Original API key
   file:
     - "build/*.deb"
     - "build/*.rpm"
+    - "build/*.AppImage"
     - "build/*.dmg"
     - "build/*.md5"
   on:
-    repo: kduske/TrenchBroom
-    tags: true
+    repo: Calinou/TrenchBroom # FIXME: kduske/TrenchBroom
+    #tags: true
     condition: $TB_DEBUG_BUILD != true
