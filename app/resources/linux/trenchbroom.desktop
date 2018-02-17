@@ -1,11 +1,10 @@
 [Desktop Entry]
 Exec=trenchbroom
-GenericName=Level Editor
-Comment=Level Editor
+GenericName=Level editor
+Comment=Level editor for Quake-derived engines
 Icon=trenchbroom
 Name=TrenchBroom
-Terminal=0
+Terminal=false
 Type=Application
-Categories=Game
-Keywords=quake;level;editor;
-
+Categories=Game;
+Keywords=quake;level;map;editor;
